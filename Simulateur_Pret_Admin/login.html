@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <!-- Ajoutez le lien vers la bibliothèque Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="bg-light">
+    <div class="container mt-5">
+      <h1 align="center">Connexion Admin</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form
+            method="POST"
+            action="formlogin.php"
+            class="p-3 bg-white rounded"
+          >
+            <div class="form-group">
+              <label for="username">Nom d'utilisateur</label>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="mdp">Mot de passe</label>
+              <input
+                type="password"
+                class="form-control"
+                name="mdp"
+                id="mdp"
+                autocomplete="off"
+              />
+            </div>
+            <button name="envoi" type="submit" class="btn btn-primary">
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ajoutez le lien vers la bibliothèque Bootstrap JavaScript et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- 0002252705764417  / 0022376722974 -->
+    <title>Simulateur de Prêt</title>
+  </head>
+  <body class="bg-dark-subtle">
+    <div class="container-fluid mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center text-primary">Simulateur de Prêt</h1>
+          <form
+            method="post"
+            class="form"
+            name="form"
+            id="form"
+            action="Php/db_insertion.php"
+          >
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input
+                class="form-control"
+                name="nom"
+                id="nom"
+                type="text"
+                placeholder="Votre nom"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="prenom">Prénom</label>
+              <input
+                class="form-control"
+                name="prenom"
+                id="prenom"
+                type="text"
+                placeholder="Votre prénom"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="tel">Téléphone</label>
+              <input
+                class="form-control"
+                name="tel"
+                type="number"
+                id="tel"
+                placeholder="Votre numéro de téléphone"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="tel">Email</label>
+              <input
+                class="form-control"
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Votre email"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="profession">Profession</label>
+              <input
+                class="form-control"
+                name="profession"
+                type="text"
+                id="profession"
+                placeholder="Votre profession"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="profession">Entreprise</label>
+              <input
+                class="form-control"
+                name="entreprise"
+                type="text"
+                id="entreprise"
+                placeholder="L'entreprise où vous travaillez"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="salaire">Salaire</label>
+              <input
+                class="form-control"
+                name="salaire"
+                type="number"
+                id="salaire"
+                placeholder="Votre salaire"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="mt-pret">Montant du Prêt</label>
+              <input
+                class="form-control"
+                name="mt_pret"
+                type="number"
+                id="mt_pret"
+                placeholder="Montant du prêt souhaité"
+              /><br />
+            </div>
+            <div class="form-group">
+              <label for="duree">Durée du Prêt (en année)</label>
+              <input
+                class="form-control"
+                name="duree"
+                type="number"
+                id="duree"
+                placeholder="Durée du prêt en année"
+              /><br />
+            </div>
+            <input
+              type="submit"
+              name="envoi"
+              id="envoi"
+              class="btn btn-primary btn-block text-center"
+            >
+              OK
+            </input>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-eMN6pJFoJ3JwZ5CI5BoQ8cMPhcCzyrnxWxFjFhdwTR81QSHGfR5fC2IdPzjfb6uz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyFPQ99D9SZ5n5ez9t4sSgF4xN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Js/index.js"></script>
+  </body>
+</html>
